@@ -16,6 +16,21 @@ public class ExamenJuniMaya {
 		BomberPlane plane8 = new BomberPlane("Myasishchev M-4", 11000,85.8 , 50.5, 47.2, 6);
 		BomberPlane plane9 = new BomberPlane();
 		BomberPlane plane10 = new BomberPlane();
+		Hangar hangar1 = new Hangar((Math.random()*(100-20) + 20),(Math.random()*(100-20) + 20), Math.random() <0.5 );
+		Hangar hangar2 = new Hangar();
+		Hangar hangar3 = new Hangar();
+		Hangar hangar4 = new Hangar();
+		Hangar hangar5 = new Hangar();
+		Hangar hangar6 = new Hangar();
+		Hangar hangar7 = new Hangar();
+		Hangar hangar8 = new Hangar();
+		Hangar hangar9 = new Hangar();
+		Hangar hangar10 = new Hangar();
+		Hangar hangar11 = new Hangar();
+		Hangar hangar12 = new Hangar();
+		Hangar hangar13 = new Hangar();
+		Hangar hangar14 = new Hangar();
+		Hangar hangar15 = new Hangar();
 		List<Plane> Planes = new ArrayList<>();
 		Planes.add(plane1);
 		Planes.add(plane2);
@@ -32,6 +47,7 @@ public class ExamenJuniMaya {
 		} catch (VluchtPlafondException e) {
 			e.printStackTrace();
 		}
+		System.out.println(hangar1.height + " " + hangar1.bomberplanesafe);
 	}
 
 	public static void calculateCeiling(double vluchtplafond, int aantalBommen) throws VluchtPlafondException {
